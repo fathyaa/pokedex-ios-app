@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" customClass="MovesTableViewCell" customModule="Pokeapi_MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSR-0v-IkF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wjs-Sk-hZk">
+                                <rect key="frame" x="15" y="15" width="114" height="35.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Razor- Wind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4G-f2-5rP">
+                                        <rect key="frame" x="5" y="5" width="104" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstItem="O4G-f2-5rP" firstAttribute="top" secondItem="Wjs-Sk-hZk" secondAttribute="top" constant="5" id="6FZ-jH-Qix"/>
+                                    <constraint firstAttribute="bottom" secondItem="O4G-f2-5rP" secondAttribute="bottom" constant="5" id="Xbz-GR-FDZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="O4G-f2-5rP" secondAttribute="trailing" constant="5" id="aRi-AH-HDv"/>
+                                    <constraint firstItem="O4G-f2-5rP" firstAttribute="leading" secondItem="Wjs-Sk-hZk" secondAttribute="leading" constant="5" id="kZR-e4-8LH"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OX-Wd-WNY">
+                                <rect key="frame" x="273" y="20.5" width="32" height="24.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ah-03-o3s">
+                                <rect key="frame" x="15" y="60.5" width="285" height="18.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Ah-03-o3s" firstAttribute="leading" secondItem="GSR-0v-IkF" secondAttribute="leading" constant="15" id="AFS-Je-lt5"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ah-03-o3s" secondAttribute="trailing" constant="20" id="JLm-4M-oMr"/>
+                            <constraint firstItem="9Ah-03-o3s" firstAttribute="top" secondItem="Wjs-Sk-hZk" secondAttribute="bottom" constant="10" id="L1D-KU-8Ev"/>
+                            <constraint firstItem="Wjs-Sk-hZk" firstAttribute="top" secondItem="GSR-0v-IkF" secondAttribute="top" constant="15" id="fT4-Nm-suz"/>
+                            <constraint firstItem="Wjs-Sk-hZk" firstAttribute="centerY" secondItem="5OX-Wd-WNY" secondAttribute="centerY" id="feM-7Y-OgK"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9Ah-03-o3s" secondAttribute="bottom" constant="10" id="ftl-WG-FtX"/>
+                            <constraint firstItem="Wjs-Sk-hZk" firstAttribute="leading" secondItem="GSR-0v-IkF" secondAttribute="leading" constant="15" id="p3K-na-CPI"/>
+                            <constraint firstAttribute="trailing" secondItem="5OX-Wd-WNY" secondAttribute="trailing" constant="15" id="vUW-2W-kpH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GSR-0v-IkF" secondAttribute="trailing" id="314-aw-jkF"/>
+                    <constraint firstItem="GSR-0v-IkF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XIj-jB-5wS"/>
+                    <constraint firstAttribute="bottom" secondItem="GSR-0v-IkF" secondAttribute="bottom" id="fdz-k3-x9A"/>
+                    <constraint firstItem="GSR-0v-IkF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jeo-qq-9kr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="accuracyLabel" destination="5OX-Wd-WNY" id="oXk-Ta-dmD"/>
+                <outlet property="effectLabel" destination="9Ah-03-o3s" id="Lqu-eO-neh"/>
+                <outlet property="moveName" destination="O4G-f2-5rP" id="MCg-tk-m0y"/>
+                <outlet property="moveView" destination="Wjs-Sk-hZk" id="PQM-Qr-KJN"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="70.3125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
